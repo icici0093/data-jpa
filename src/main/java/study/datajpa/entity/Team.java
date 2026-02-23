@@ -1,4 +1,4 @@
-package study.data_spa.entity;
+package study.datajpa.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +10,7 @@ import java.util.List;
 @Getter @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString(of = {"id", "name"})
-public class Team {
+public class Team extends JpaBaseEntity {
 
     @Id @GeneratedValue
     @Column(name = "team_id")
